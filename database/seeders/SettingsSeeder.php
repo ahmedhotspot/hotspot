@@ -11,7 +11,7 @@ class SettingsSeeder extends Seeder
     {
         $data = [
             // General
-            ['general', 'site_name_ar', 'هوت سبوت للتمويل', 'text', 'اسم الموقع (عربي)', false, 1],
+            ['general', 'site_name_ar', 'هوت سبوت ', 'text', 'اسم الموقع (عربي)', false, 1],
             ['general', 'site_name_en', 'Hotspot Finance', 'text', 'Site Name (EN)', false, 2],
             ['general', 'logo_ar', 'assets/img/logo_ar.png', 'image', 'الشعار (عربي)', false, 3],
             ['general', 'logo_en', 'assets/img/logo_ar.png', 'image', 'Logo (EN)', false, 4],

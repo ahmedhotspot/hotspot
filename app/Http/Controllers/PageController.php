@@ -78,7 +78,18 @@ class PageController extends Controller
             'national_id.regex' => __('National ID must be exactly 10 digits.'),
         ]);
 
-        Application::create($data + ['status' => 'new']);
+        $payload = $data + ['status' => 'new'];
+        if ($user = $request->user()) {
+            $payload['user_id'] = $user->id;
+            $payload['email']   = $payload['email'] ?? $user->email;
+        }
+
+        Application::create($payload);
+
+        if ($request->user()) {
+            return redirect()->route('client.dashboard')
+                ->with('success', __('Your request has been submitted. We will contact you shortly.'));
+        }
 
         return redirect()->route('financing-request')
             ->with('success', __('Your request has been submitted. We will contact you shortly.'));

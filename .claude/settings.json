@@ -39,7 +39,17 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code} assets/css/style.css\\\\n\" http://127.0.0.1:8000/assets/css/style.css)",
       "Bash(curl -s -o /dev/null -w \"%{http_code} Hotspot_Redesign/assets/css/style.css\\\\n\" http://127.0.0.1:8000/Hotspot_Redesign/assets/css/style.css)",
       "Bash(grep -r '$isRtl' 'd:\\\\New folder \\(2\\)\\\\my-website/resources/views' '--include=*.php')",
-      "Bash(xargs basename:*)"
+      "Bash(xargs basename:*)",
+      "Bash(php -l app/Http/Controllers/Auth/AuthController.php)",
+      "Bash(php -l app/Http/Controllers/ClientDashboardController.php)",
+      "Bash(curl -s -H \"Authorization: 6NKbQBoieHE8xf29cl1pyUFNP9vowU=\" -H \"Accept: application/json\" \"http://8.213.80.135/hotspotloans/public/api/website/industries\")",
+      "Read(//c/Users/Ahmed/Desktop/financing-request/financing-request/**)",
+      "Bash(wc -l *.php *.blade.php)",
+      "Bash(wc -l \"C:/Users/Ahmed/Desktop/financing-request/financing-request/\"*.blade.php)",
+      "Bash(grep -E \"email_verif|email_verified\" database/migrations/*.php)",
+      "Bash(grep -c \"MICROSOFT_TENANT_ID\" .env)",
+      "Bash(grep -c \"MICROSOFT_TENANT_ID\" .env.example)",
+      "Bash(grep -n \"</form>\\\\|@endsection\\\\|</div>$\" resources/views/client/financing-request/create.blade.php)"
     ]
   }
 }

@@ -43,6 +43,13 @@
                             <a href="{{ url('/admin') }}" class="dropdown-item">
                                 <i class="fa-solid fa-gauge"></i> {{ block('nav.account.dashboard', $isRtl ? 'لوحة التحكم' : 'Dashboard') }}
                             </a>
+                        @else
+                            <a href="{{ route('client.dashboard') }}" class="dropdown-item">
+                                <i class="fa-solid fa-gauge"></i> {{ block('nav.account.my_dashboard', $isRtl ? 'حسابي وطلباتي' : 'My Dashboard') }}
+                            </a>
+                            <a href="{{ route('client.profile') }}" class="dropdown-item">
+                                <i class="fa-solid fa-user"></i> {{ block('nav.account.profile', $isRtl ? 'بياناتي' : 'My Profile') }}
+                            </a>
                         @endif
                         <form method="POST" action="{{ route('logout') }}" class="m-0">
                             @csrf

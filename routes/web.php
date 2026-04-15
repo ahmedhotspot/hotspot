@@ -40,9 +40,41 @@ Route::middleware('guest')->group(function () {
     Route::post('/reset-password', [PasswordController::class, 'reset'])->name('password.update');
 });
 
+// Email verification (accessible to both guests and authenticated users)
+Route::get('/verify-email/{token}', [AuthController::class, 'verifyEmail'])->name('verification.verify');
+
 // Auth (logged-in)
 Route::middleware('auth')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+    Route::get('/dashboard',  [\App\Http\Controllers\ClientDashboardController::class, 'index'])->name('client.dashboard');
+    Route::get('/dashboard/applications/{application}', [\App\Http\Controllers\ClientDashboardController::class, 'show'])->name('client.applications.show');
+    Route::get('/dashboard/profile',  [\App\Http\Controllers\ClientDashboardController::class, 'profile'])->name('client.profile');
+    Route::post('/dashboard/profile', [\App\Http\Controllers\ClientDashboardController::class, 'updateProfile'])->name('client.profile.update');
+
+    Route::get('/dashboard/financing/new',  [\App\Http\Controllers\ClientDashboardController::class, 'createFinancing'])->name('client.financing.create');
+    Route::post('/dashboard/financing',     [\App\Http\Controllers\ClientDashboardController::class, 'storeFinancing'])->name('client.financing.store');
+
+    // Financing Request (full feature)
+    Route::prefix('dashboard/financing-request')->name('client.financing-request.')->group(function () {
+        Route::get('/',                  [\App\Http\Controllers\FinancingRequestController::class, 'index'])->name('index');
+        Route::get('/create',            [\App\Http\Controllers\FinancingRequestController::class, 'create'])->name('create');
+        Route::post('/',                 [\App\Http\Controllers\FinancingRequestController::class, 'store'])->name('store');
+        Route::post('/store-and-pay',    [\App\Http\Controllers\FinancingRequestController::class, 'storeAndPay'])->name('store_and_pay');
+        Route::post('/sub-product',      [\App\Http\Controllers\FinancingRequestController::class, 'saveSubProductToSession'])->name('sub_product');
+        Route::post('/track-step',       [\App\Http\Controllers\FinancingRequestController::class, 'trackStep'])->name('track-step');
+        Route::get('/success/{id}',      [\App\Http\Controllers\FinancingRequestController::class, 'success'])->name('success');
+        Route::get('/{req}',             [\App\Http\Controllers\FinancingRequestController::class, 'show'])->name('show')->whereNumber('req');
+        Route::get('/{req}/offers',      [\App\Http\Controllers\FinancingRequestController::class, 'offers'])->name('offers')->whereNumber('req');
+        Route::post('/{req}/select-offer', [\App\Http\Controllers\FinancingRequestController::class, 'selectOffer'])->name('select-offer')->whereNumber('req');
+
+        // Payments
+        Route::post('/payment/initiate',         [\App\Http\Controllers\ClickPayController::class, 'initiate'])->name('payment.initiate');
+        Route::match(['get', 'post'], '/payment/callback', [\App\Http\Controllers\ClickPayController::class, 'callback'])->withoutMiddleware(['auth'])->name('payment.callback');
+        Route::match(['get', 'post'], '/payment/return',   [\App\Http\Controllers\ClickPayController::class, 'return'])->name('payment.return');
+        Route::get('/payment/success/{id}',      [\App\Http\Controllers\ClickPayController::class, 'paymentSuccess'])->name('payment.success');
+        Route::get('/payment/failed/{id}',       [\App\Http\Controllers\ClickPayController::class, 'paymentFailed'])->name('payment.failed');
+    });
 });
 
 // Admin
