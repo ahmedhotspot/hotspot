@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تقديم طلب التمويل | هوت سبوت للتمويل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo"><img src="../assets/img/logo_ar.png" alt="شعار هوت سبوت" class="logo-img"></a>
+    <div class="nav-links">
+      <a href="services.html" class="nav-link">انواع التمويل</a>
+      <a href="index.html#calculator" class="nav-link">حاسبة التمويل</a>
+      <a href="about.html" class="nav-link">من نحن</a>
+      <a href="contact.html" class="nav-link">اتصل بنا</a>
+            <a href="faq.html" class="nav-link">الأسئلة الشائعة</a>
+    </div>
+    <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <a href="../index.html" class="lang-btn">English</a>
+      <div class="dropdown">
+        <button class="btn btn-primary btn-sm">تسجيل <i class="fa-solid fa-chevron-down fs-sm"></i></button>
+        <div class="dropdown-menu">
+          <a href="register.html" class="dropdown-item">تسجيل</a>
+          <a href="login.html" class="dropdown-item">تسجيل الدخول</a>
+        </div>
+      </div>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="apply-hero">
+    <div class="container">
+        <div class="apply-header">
+            <img src="../assets/img/logo_ar.png" alt="هوت سبوت للتمويل" />
+            <h1>تقديم طلب التمويل</h1>
+            <p>أكمل النموذج أدناه وسيتواصل معك أحد مستشارينا خلال 24 ساعة</p>
+        </div>
+    </div>
+</section>
+
+<section class="apply-form-section">
+    <div class="container">
+        <div class="apply-layout">
+
+            <div class="form-card">
+                <form>
+                    <h2>البيانات الشخصية</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">الاسم الكامل</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="أدخل اسمك الكامل" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="nationalId">رقم الهوية</label>
+                            <input type="text" id="nationalId" name="nationalId" placeholder="أدخل رقم الهوية الوطنية أو الإقامة" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">رقم الجوال</label>
+                            <input type="tel" id="phone" name="phone" placeholder="05XXXXXXXX" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" placeholder="example@email.com" required />
+                        </div>
+                    </div>
+
+                    <h2>بيانات التوظيف</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="employer">جهة العمل</label>
+                            <input type="text" id="employer" name="employer" placeholder="اسم جهة العمل الحالية" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="sector">القطاع</label>
+                            <select id="sector" name="sector" required>
+                                <option value="" disabled selected>اختر القطاع</option>
+                                <option value="government">حكومي</option>
+                                <option value="private">خاص</option>
+                                <option value="military">عسكري</option>
+                                <option value="retired">متقاعد</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="salary">الراتب الشهري</label>
+                            <input type="number" id="salary" name="salary" placeholder="الراتب بالريال السعودي" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceLength">مدة الخدمة بالأشهر</label>
+                            <input type="number" id="serviceLength" name="serviceLength" placeholder="عدد أشهر الخدمة" required />
+                        </div>
+                    </div>
+
+                    <h2>تفاصيل التمويل</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="financeType">نوع التمويل</label>
+                            <select id="financeType" name="financeType" required>
+                                <option value="" disabled selected>اختر نوع التمويل</option>
+                                <option value="personal">شخصي</option>
+                                <option value="auto">سيارات</option>
+                                <option value="mortgage">عقاري</option>
+                                <option value="credit-card">بطاقة ائتمان</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">مبلغ التمويل المطلوب</label>
+                            <input type="number" id="amount" name="amount" placeholder="المبلغ بالريال السعودي" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">ملاحظات إضافية</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="أي معلومات إضافية ترغب بمشاركتها معنا"></textarea>
+                    </div>
+
+                    <div class="form-note">
+                        <p><i class="fa-solid fa-circle-info"></i> بياناتك محمية بالكامل ولن تُشارك مع أي طرف ثالث بدون موافقتك.</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg w-100">إرسال الطلب <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+            <div>
+                <div class="apply-sidebar-card">
+                    <h4>لماذا هوت سبوت؟</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> مرخص من البنك المركزي السعودي (ساما)</li>
+                        <li><i class="fa-solid fa-check"></i> أكثر من 20 شريك مصرفي ومالي</li>
+                        <li><i class="fa-solid fa-check"></i> موافقات فورية على الطلبات المؤهلة</li>
+                        <li><i class="fa-solid fa-check"></i> بدون رسوم أو عمولات مخفية</li>
+                    </ul>
+                </div>
+                <div class="apply-sidebar-card">
+                    <h4>تحتاج مساعدة؟</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> <a href="tel:8002450071">800-245-0071</a></li>
+                        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:Customercare@hotspot.sa">Customercare@hotspot.sa</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer section pb-0">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo mb-3"><img src="../assets/img/logo_ar.png" alt="شعار هوت سبوت" class="logo-img"></a>
+        <p class="text-muted mt-3">الوجهة الرائدة لمقارنة واختيار وتأمين عروض التمويل المخصصة من أفضل البنوك في المملكة العربية السعودية.</p>
+        <div class="footer-app-links mt-4">
+          <p>حمل التطبيق</p>
+          <div class="app-btn-container">
+            <a href="https://play.google.com/store/apps/details?id=com.hotspotfin.client" class="app-store-btn" target="_blank"><img src="../assets/img/social/android.png" alt="Google Play"></a>
+            <a href="https://apps.apple.com/sa/app/hotspotfin/id6466173356" class="app-store-btn" target="_blank"><img src="../assets/img/social/ios.png" alt="App Store"></a>
+          </div>
+        </div>
+        <div class="social-links mt-4">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>التمويل</h4>
+        <ul>
+          <li><a href="service-personal.html">تمويل شخصي</a></li>
+          <li><a href="service-auto.html">تمويل السيارات</a></li>
+          <li><a href="service-mortgage.html">تمويل الرهن العقاري</a></li>
+          <li><a href="service-credit-card.html">بطاقات الائتمان</a></li>
+          <li><a href="service-sme.html">تمويل الشركات الصغيرة</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>الشركة</h4>
+        <ul>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+          <li><a href="privacy.html">سياسة الخصوصية</a></li>
+          <li><a href="terms.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>تواصل معنا</h4>
+        <ul class="contact-ul">
+          <li><i class="fa-solid fa-envelope text-primary"></i> <a href="mailto:Customercare@hotspot.sa">Customercare@hotspot.sa</a></li>
+          <li><i class="fa-solid fa-phone text-primary"></i> <a href="tel:8002450071">800-245-0071</a></li>
+          <li class="d-flex gap-2"><i class="fa-solid fa-location-dot text-primary mt-1"></i><span>شركة هوت سبوت لسوق المنتجات الرقمية، 2493 السلي، 7326، الرياض، المملكة العربية السعودية</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex justify-content-between align-items-center flex-wrap gap-4">
+        <p>&copy; 2026 هوت سبوت للتمويل. مرخص من قبل البنك المركزي السعودي (ساما). جميع الحقوق محفوظة.</p>
+        <div class="footer-regulator"><span>مرخص من</span><img src="../assets/img/central-bank.png" alt="ساما" class="sama-logo"></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

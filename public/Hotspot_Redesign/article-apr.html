@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is APR and Why Does it Matter? | Hotspot Finance</title>
+    <meta name="description" content="Learn what Annual Percentage Rate (APR) is and how it affects the true cost of your financing. A comprehensive guide to comparing interest rates." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        .article-detail-hero {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+        }
+        .article-detail-hero img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .article-detail-hero .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2));
+        }
+        .article-detail-hero .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 3rem 0;
+            color: white;
+            width: 100%;
+        }
+        .article-detail-hero .hero-content .badge-cat {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.35rem 1rem;
+            border-radius: var(--radius-md);
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        .article-detail-hero .hero-content h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+        .article-detail-hero .hero-content .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+        .article-body {
+            padding: 4rem 0;
+        }
+        .article-body .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .article-body h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 2.5rem 0 1rem;
+            color: var(--text-main);
+        }
+        .article-body p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+        .article-body ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .article-body ul li {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        .info-box {
+            background: var(--bg-main);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+        .info-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+        .back-link:hover {
+            gap: 0.75rem;
+        }
+        .related-articles {
+            background: var(--bg-main);
+            padding: 4rem 0;
+        }
+        @media (max-width: 768px) {
+            .article-detail-hero {
+                height: 300px;
+            }
+            .article-detail-hero .hero-content h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo_en.jpg" alt="Hotspot Logo" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="services.html" class="nav-link">Financing Types</a>
+                <a href="index.html#calculator" class="nav-link">Calculator</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+                <a href="ar/index.html" class="lang-btn">العربية</a>
+                <div class="dropdown">
+                    <button class="btn btn-primary btn-sm">Register <i class="fa-solid fa-chevron-down fs-sm"></i></button>
+                    <div class="dropdown-menu">
+                        <a href="register.html" class="dropdown-item">Register</a>
+                        <a href="login.html" class="dropdown-item">Login</a>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="article-detail-hero">
+            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=80" alt="Annual Percentage Rate">
+            <div class="overlay"></div>
+            <div class="container hero-content">
+                <span class="badge-cat">Terminology</span>
+                <h1>What is APR and Why Does it Matter?</h1>
+                <div class="meta">
+                    <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+                    <span><i class="fa-regular fa-calendar"></i> March 15, 2026</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Body -->
+        <section class="article-body">
+            <div class="container">
+                <div class="content-wrapper">
+                    <a href="index.html#education" class="back-link">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Financial Guides
+                    </a>
+
+                    <h2>What is Annual Percentage Rate (APR)?</h2>
+                    <p>The Annual Percentage Rate (APR) is the total annual cost of financing expressed as a percentage. This rate includes not only the base interest rate, but also all fees and costs associated with the financing.</p>
+
+                    <div class="info-box">
+                        <p><i class="fa-solid fa-lightbulb text-primary"></i> APR is the most accurate measure for comparing different financing offers because it reflects the true total cost.</p>
+                    </div>
+
+                    <h2>Why Does APR Matter?</h2>
+                    <p>When comparing financing offers from different banks, you may find that the advertised interest rates are similar. However, the actual cost can vary significantly due to additional fees. APR helps you:</p>
+                    <ul>
+                        <li>Compare offers fairly and accurately across different banks</li>
+                        <li>Understand the true cost of financing including all fees</li>
+                        <li>Make an informed decision that saves you money in the long run</li>
+                        <li>Avoid offers that look attractive on the surface but are actually expensive</li>
+                    </ul>
+
+                    <h2>How is APR Calculated?</h2>
+                    <p>APR is calculated by taking all financing costs into account, including:</p>
+                    <ul>
+                        <li><strong>Base Interest Rate:</strong> The percentage applied to the borrowed amount</li>
+                        <li><strong>Processing Fees:</strong> Administrative charges for handling the financing application</li>
+                        <li><strong>Valuation Fees:</strong> Costs for appraising collateral (in the case of mortgages)</li>
+                        <li><strong>Insurance Fees:</strong> Costs of mandatory insurance linked to the financing</li>
+                    </ul>
+
+                    <h2>Practical Tips for Comparison</h2>
+                    <p>When searching for the best financing offer, follow these tips:</p>
+                    <ul>
+                        <li>Always ask for the APR, not just the interest rate</li>
+                        <li>Compare at least 3 offers from different banks</li>
+                        <li>Use Hotspot's financing calculator to easily compare offers</li>
+                        <li>Make sure the repayment period is the same when comparing offers</li>
+                    </ul>
+
+                    <div class="info-box">
+                        <p><i class="fa-solid fa-circle-info text-primary"></i> According to SAMA (Saudi Central Bank) regulations, all banks and financial institutions must clearly disclose the APR in all financing offers.</p>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <a href="index.html#calculator" class="btn btn-primary btn-lg">Try the Finance Calculator <i class="fa-solid fa-calculator"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Articles -->
+        <section class="related-articles">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2>Related Articles</h2>
+                </div>
+                <div class="article-grid">
+                    <a href="article-mortgage.html" class="article-card">
+                        <div class="article-img">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&q=80" alt="House">
+                            <div class="article-category">Mortgages</div>
+                        </div>
+                        <div class="article-content">
+                            <h3>First-Time Homebuyer Requirements in KSA</h3>
+                            <p>A complete checklist of documents and eligibility criteria for securing your first mortgage.</p>
+                            <span class="read-more">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="article-credit-score.html" class="article-card">
+                        <div class="article-img">
+                            <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=500&q=80" alt="Calculations">
+                            <div class="article-category">Strategy</div>
+                        </div>
+                        <div class="article-content">
+                            <h3>How to Improve Your Credit Score</h3>
+                            <p>Simple steps to boost your credit profile and qualify for the best interest rates from top banks.</p>
+                            <span class="read-more">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section pb-0">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo mb-3">
+                        <img src="assets/img/logo_en.jpg" alt="Hotspot Logo" class="logo-img">
+                    </a>
+                    <p class="text-muted mt-3">The leading destination to compare, choose, and secure custom financing offers from top banks in Saudi Arabia.</p>
+                    <div class="footer-app-links mt-4">
+                        <p>Download the App</p>
+                        <div class="app-btn-container">
+                            <a href="https://play.google.com/store/apps/details?id=com.hotspotfin.client" class="app-store-btn" target="_blank">
+                                <img src="assets/img/social/android.png" alt="Get it on Google Play">
+                            </a>
+                            <a href="https://apps.apple.com/sa/app/hotspotfin/id6466173356" class="app-store-btn" target="_blank">
+                                <img src="assets/img/social/ios.png" alt="Download on the App Store">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Financing</h4>
+                    <ul>
+                        <li><a href="service-personal.html">Personal Finance</a></li>
+                        <li><a href="service-auto.html">Auto Finance</a></li>
+                        <li><a href="service-mortgage.html">Mortgage Finance</a></li>
+                        <li><a href="service-credit-card.html">Credit Cards</a></li>
+                        <li><a href="service-sme.html">SME Finance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Hotspot</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Get in Touch</h4>
+                    <ul class="contact-ul">
+                        <li><i class="fa-solid fa-envelope text-primary"></i> <a href="mailto:Customercare@hotspot.sa">Customercare@hotspot.sa</a></li>
+                        <li><i class="fa-solid fa-phone text-primary"></i> <a href="tel:8002450071">800-245-0071</a></li>
+                        <li class="d-flex gap-2">
+                            <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                            <span>Hotspot Digital Marketplace LLC, 2493 Al Salhi Dist. 7326, Riyadh, Saudi Arabia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container d-flex justify-content-between align-items-center flex-wrap gap-4">
+                    <p>&copy; 2026 Hotspot Finance. Licensed by the Saudi Central Bank (SAMA). All Rights Reserved.</p>
+                    <div class="footer-regulator">
+                        <span>Regulated by</span>
+                        <img src="assets/img/central-bank.png" alt="SAMA Regulator" class="sama-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

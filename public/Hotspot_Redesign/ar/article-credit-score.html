@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>كيفية تحسين درجة الائتمان الخاصة بك | هوت سبوت للتمويل</title>
+    <meta name="description" content="تعرف على خطوات عملية لتحسين درجتك الائتمانية والتأهل لأفضل أسعار التمويل من البنوك السعودية." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      .article-detail-hero {
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+      }
+      .article-detail-hero img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .article-detail-hero .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2));
+      }
+      .article-detail-hero .hero-content {
+        position: relative;
+        z-index: 2;
+        padding: 3rem 0;
+        color: white;
+        width: 100%;
+      }
+      .article-detail-hero .hero-content .badge-cat {
+        background: var(--primary-color);
+        color: white;
+        padding: 0.35rem 1rem;
+        border-radius: var(--radius-md);
+        font-size: 0.85rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 1rem;
+      }
+      .article-detail-hero .hero-content h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+      }
+      .article-detail-hero .hero-content .meta {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+        opacity: 0.85;
+      }
+      .article-body {
+        padding: 4rem 0;
+      }
+      .article-body .content-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .article-body h2 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin: 2.5rem 0 1rem;
+        color: var(--text-main);
+      }
+      .article-body h3 {
+        font-size: 1.35rem;
+        font-weight: 600;
+        margin: 1.5rem 0 0.75rem;
+        color: var(--text-main);
+      }
+      .article-body p {
+        font-size: 1.1rem;
+        line-height: 1.9;
+        color: var(--text-muted);
+        margin-bottom: 1.25rem;
+      }
+      .article-body ul, .article-body ol {
+        padding-right: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .article-body ul li, .article-body ol li {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: var(--text-muted);
+        margin-bottom: 0.5rem;
+      }
+      .info-box {
+        background: var(--bg-main);
+        border-right: 4px solid var(--primary-color);
+        padding: 1.5rem 2rem;
+        border-radius: var(--radius-md);
+        margin: 2rem 0;
+      }
+      .info-box p {
+        margin-bottom: 0;
+        font-weight: 500;
+        color: var(--text-main);
+      }
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-bottom: 2rem;
+        text-decoration: none;
+        transition: all var(--transition-normal);
+      }
+      .back-link:hover {
+        gap: 0.75rem;
+      }
+      .related-articles {
+        background: var(--bg-main);
+        padding: 4rem 0;
+      }
+      .score-range {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin: 1.5rem 0;
+      }
+      .score-item {
+        padding: 1.25rem;
+        border-radius: var(--radius-md);
+        text-align: center;
+        font-weight: 600;
+      }
+      .score-item.excellent {
+        background: #dcfce7;
+        color: #166534;
+        border: 1px solid #bbf7d0;
+      }
+      .score-item.good {
+        background: #dbeafe;
+        color: #1e40af;
+        border: 1px solid #bfdbfe;
+      }
+      .score-item.fair {
+        background: #fef3c7;
+        color: #92400e;
+        border: 1px solid #fde68a;
+      }
+      .score-item.poor {
+        background: #fee2e2;
+        color: #991b1b;
+        border: 1px solid #fecaca;
+      }
+      .score-item .score-label {
+        display: block;
+        font-size: 0.85rem;
+        margin-top: 0.25rem;
+        font-weight: 400;
+      }
+      .tip-card {
+        background: white;
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+      }
+      .tip-card .tip-icon {
+        width: 40px;
+        height: 40px;
+        background: var(--primary-color);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-weight: 700;
+      }
+      .tip-card h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.35rem;
+        color: var(--text-main);
+      }
+      .tip-card p {
+        font-size: 0.95rem;
+        margin-bottom: 0;
+        color: var(--text-muted);
+        line-height: 1.7;
+      }
+      @media (max-width: 768px) {
+        .article-detail-hero {
+          height: 300px;
+        }
+        .article-detail-hero .hero-content h1 {
+          font-size: 1.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <img src="../assets/img/logo_ar.png" alt="شعار هوت سبوت" class="logo-img">
+        </a>
+        <div class="nav-links">
+          <a href="services.html" class="nav-link">انواع التمويل</a>
+          <a href="index.html#calculator" class="nav-link">حاسبة التمويل</a>
+          <a href="about.html" class="nav-link">من نحن</a>
+          <a href="contact.html" class="nav-link">اتصل بنا</a>
+            <a href="faq.html" class="nav-link">الأسئلة الشائعة</a>
+        </div>
+        <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+          <a href="../index.html" class="lang-btn">English</a>
+          <div class="dropdown">
+            <button class="btn btn-primary btn-sm">تسجيل <i class="fa-solid fa-chevron-down fs-sm"></i></button>
+            <div class="dropdown-menu">
+              <a href="register.html" class="dropdown-item">تسجيل</a>
+              <a href="login.html" class="dropdown-item">تسجيل الدخول</a>
+            </div>
+          </div>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+      <section class="article-detail-hero">
+        <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=1200&q=80" alt="تحسين درجة الائتمان">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+          <span class="badge-cat">استراتيجية</span>
+          <h1>كيفية تحسين درجة الائتمان الخاصة بك</h1>
+          <div class="meta">
+            <span><i class="fa-regular fa-clock"></i> 6 دقائق قراءة</span>
+            <span><i class="fa-regular fa-calendar"></i> 5 مارس 2026</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Article Body -->
+      <section class="article-body">
+        <div class="container">
+          <div class="content-wrapper">
+            <a href="index.html#education" class="back-link">
+              <i class="fa-solid fa-arrow-right"></i> العودة إلى الأدلة المالية
+            </a>
+
+            <h2>ما هي درجة الائتمان؟</h2>
+            <p>درجة الائتمان (Credit Score) هي تقييم رقمي يعكس مدى جدارتك الائتمانية بناءً على تاريخك المالي. في المملكة العربية السعودية، تقوم الشركة السعودية للمعلومات الائتمانية (سمة) بإصدار التقارير الائتمانية التي تعتمد عليها البنوك في اتخاذ قرارات التمويل.</p>
+
+            <h2>فهم نطاقات الدرجة الائتمانية</h2>
+            <div class="score-range">
+              <div class="score-item excellent">
+                700+
+                <span class="score-label">ممتاز</span>
+              </div>
+              <div class="score-item good">
+                650 - 699
+                <span class="score-label">جيد</span>
+              </div>
+              <div class="score-item fair">
+                600 - 649
+                <span class="score-label">مقبول</span>
+              </div>
+              <div class="score-item poor">
+                أقل من 600
+                <span class="score-label">ضعيف</span>
+              </div>
+            </div>
+            <p>كلما ارتفعت درجتك الائتمانية، زادت فرصك في الحصول على تمويل بأسعار فائدة أفضل وشروط أكثر مرونة.</p>
+
+            <div class="info-box">
+              <p><i class="fa-solid fa-lightbulb text-primary"></i> يمكنك الاطلاع على تقريرك الائتماني مجاناً مرة واحدة سنوياً من خلال موقع سمة الرسمي.</p>
+            </div>
+
+            <h2>7 خطوات لتحسين درجتك الائتمانية</h2>
+
+            <div class="tip-card">
+              <div class="tip-icon">1</div>
+              <div>
+                <h4>سدد فواتيرك في الوقت المحدد</h4>
+                <p>التأخر في السداد ولو ليوم واحد يؤثر سلباً على تقريرك. فعّل التحويل التلقائي لضمان السداد في الموعد.</p>
+              </div>
+            </div>
+
+            <div class="tip-card">
+              <div class="tip-icon">2</div>
+              <div>
+                <h4>قلل نسبة استخدام بطاقة الائتمان</h4>
+                <p>حاول ألا تتجاوز استخدامك 30% من الحد الائتماني المتاح. استخدام أقل = درجة أعلى.</p>
+              </div>
+            </div>
+
+            <div class="tip-card">
+              <div class="tip-icon">3</div>
+              <div>
+                <h4>لا تتقدم لعدة تمويلات في وقت واحد</h4>
+                <p>كل طلب تمويل يُسجل كاستفسار في تقريرك. الاستفسارات المتعددة في فترة قصيرة تعطي انطباعاً سلبياً.</p>
+              </div>
+            </div>
+
+            <div class="tip-card">
+              <div class="tip-icon">4</div>
+              <div>
+                <h4>حافظ على حسابات قديمة مفتوحة</h4>
+                <p>طول تاريخك الائتماني مهم. لا تغلق بطاقات ائتمان قديمة حتى لو لم تستخدمها بكثرة.</p>
+              </div>
+            </div>
+
+            <div class="tip-card">
+              <div class="tip-icon">5</div>
+              <div>
+                <h4>نوّع مصادر الائتمان</h4>
+                <p>وجود مزيج من أنواع الائتمان المختلفة (بطاقة ائتمان، تمويل سيارة، إلخ) يُحسّن درجتك.</p>
+              </div>
+            </div>
+
+            <div class="tip-card">
+              <div class="tip-icon">6</div>
+              <div>
+                <h4>راجع تقريرك بانتظام</h4>
+                <p>تحقق من تقرير سمة للتأكد من عدم وجود أخطاء أو معلومات غير دقيقة، وقدم اعتراضاً فورياً إن وجدت.</p>
+              </div>
+            </div>
+
+            <div class="tip-card">
+              <div class="tip-icon">7</div>
+              <div>
+                <h4>سدد الديون القائمة</h4>
+                <p>ابدأ بسداد الديون ذات الفائدة الأعلى أولاً. تقليل إجمالي المديونية يرفع درجتك بشكل ملحوظ.</p>
+              </div>
+            </div>
+
+            <h2>كم يستغرق تحسين الدرجة الائتمانية؟</h2>
+            <p>تحسين درجتك الائتمانية ليس فورياً. عادةً ما تحتاج من 3 إلى 6 أشهر من الالتزام بالممارسات الصحيحة لرؤية تحسن ملموس. في بعض الحالات (مثل التعثرات الكبيرة)، قد يستغرق الأمر سنة أو أكثر.</p>
+
+            <div class="info-box">
+              <p><i class="fa-solid fa-circle-info text-primary"></i> لا تنتظر حتى تحتاج التمويل لتبدأ بتحسين درجتك. ابدأ الآن وستكون جاهزاً عندما تحتاج للتقديم.</p>
+            </div>
+
+            <div class="text-center mt-5">
+              <a href="index.html#calculator" class="btn btn-primary btn-lg">قارن عروض التمويل الآن <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Articles -->
+      <section class="related-articles">
+        <div class="container">
+          <div class="section-header text-center mb-5">
+            <h2>مقالات ذات صلة</h2>
+          </div>
+          <div class="article-grid">
+            <a href="article-apr.html" class="article-card">
+              <div class="article-img">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500&q=80" alt="Finance">
+                <div class="article-category">المصطلحات</div>
+              </div>
+              <div class="article-content">
+                <h3>ما هو معدل الربح السنوي ولماذا يهم؟</h3>
+                <p>معدل النسبة السنوية هو العامل الأكثر أهمية عند مقارنة التمويل. تعلم كيف يتم حسابه.</p>
+                <span class="read-more">اقرأ الدليل <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+            <a href="article-mortgage.html" class="article-card">
+              <div class="article-img">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&q=80" alt="House">
+                <div class="article-category">الرهن العقاري</div>
+              </div>
+              <div class="article-content">
+                <h3>متطلبات شراء المنزل لأول مرة في السعودية</h3>
+                <p>قائمة كاملة بالمستندات ومعايير الأهلية لتأمين الرهن العقاري الأول الخاص بك.</p>
+                <span class="read-more">اقرأ الدليل <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section pb-0">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo mb-3">
+              <img src="../assets/img/logo_ar.png" alt="شعار هوت سبوت" class="logo-img">
+            </a>
+            <p class="text-muted mt-3">الوجهة الرائدة لمقارنة واختيار وتأمين عروض التمويل المخصصة من أفضل البنوك في المملكة العربية السعودية.</p>
+            <div class="footer-app-links mt-4">
+              <p>حمل التطبيق</p>
+              <div class="app-btn-container">
+                <a href="https://play.google.com/store/apps/details?id=com.hotspotfin.client" class="app-store-btn" target="_blank">
+                  <img src="../assets/img/social/android.png" alt="احصل عليه من Google Play">
+                </a>
+                <a href="https://apps.apple.com/sa/app/hotspotfin/id6466173356" class="app-store-btn" target="_blank">
+                  <img src="../assets/img/social/ios.png" alt="نزله من App Store">
+                </a>
+              </div>
+            </div>
+            <div class="social-links mt-4">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>التمويل</h4>
+            <ul>
+              <li><a href="service-personal.html">تمويل شخصي</a></li>
+              <li><a href="service-auto.html">تمويل السيارات</a></li>
+              <li><a href="service-mortgage.html">تمويل الرهن العقاري</a></li>
+              <li><a href="service-credit-card.html">بطاقات الائتمان</a></li>
+              <li><a href="service-sme.html">تمويل الشركات الصغيرة</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>الشركة</h4>
+            <ul>
+              <li><a href="about.html">من نحن</a></li>
+              <li><a href="contact.html">اتصل بنا</a></li>
+              <li><a href="privacy.html">سياسة الخصوصية</a></li>
+              <li><a href="terms.html">الشروط والأحكام</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>تواصل معنا</h4>
+            <ul class="contact-ul">
+              <li><i class="fa-solid fa-envelope text-primary"></i> <a href="mailto:Customercare@hotspot.sa">Customercare@hotspot.sa</a></li>
+              <li><i class="fa-solid fa-phone text-primary"></i> <a href="tel:8002450071">800-245-0071</a></li>
+              <li class="d-flex gap-2">
+                <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                <span>شركة هوت سبوت لسوق المنتجات الرقمية، 2493 السلي، 7326، الرياض، المملكة العربية السعودية</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container d-flex justify-content-between align-items-center flex-wrap gap-4">
+            <p>&copy; 2026 هوت سبوت للتمويل. مرخص من قبل البنك المركزي السعودي (ساما). جميع الحقوق محفوظة.</p>
+            <div class="footer-regulator">
+              <span>مرخص من</span>
+              <img src="../assets/img/central-bank.png" alt="البنك المركزي السعودي ساما" class="sama-logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

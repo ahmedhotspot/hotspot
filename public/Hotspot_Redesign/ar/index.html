@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>هوت سبوت للتمويل | قارن عروض التمويل</title>
+    <meta
+      name="description"
+      content="قارن عروض التمويل من أفضل البنوك في المملكة العربية السعودية. ابحث عن أفضل الأسعار للقروض الشخصية وتمويل السيارات والرهن العقاري مع موافقة فورية."
+    />
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=Cairo:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <img src="../assets/img/logo_ar.png" alt="شعار هوت سبوت" class="logo-img">
+        </a>
+
+        <div class="nav-links">
+            <a href="services.html" class="nav-link">انواع التمويل</a>
+            <a href="index.html#calculator" class="nav-link">حاسبة التمويل</a>
+            <a href="about.html" class="nav-link">من نحن</a>
+            <a href="contact.html" class="nav-link">اتصل بنا</a>
+            <a href="faq.html" class="nav-link">الأسئلة الشائعة</a>
+        </div>
+
+        <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+          <a href="../index.html" class="lang-btn">English</a>
+                    <div class="dropdown">
+            <button class="btn btn-primary btn-sm">تسجيل <i class="fa-solid fa-chevron-down fs-sm"></i></button>
+            <div class="dropdown-menu">
+              <a href="register.html" class="dropdown-item">تسجيل</a>
+              <a href="login.html" class="dropdown-item">تسجيل الدخول</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="mobile-menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- App Content Wrapper -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <!-- Decorative Elements -->
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            
+            <div class="container hero-container">
+                <div class="hero-content animate-fade-in-up">
+                    <span class="badge badge-primary mb-3"><i class="fa-solid fa-bolt"></i> مرخص من ساما وموافقات فورية</span>
+                    
+                    <h1 class="hero-title">
+                        قارن واحصل على <br>
+                        <span class="text-gradient">أفضل عروض التمويل</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        احصل على أفضل عروض التمويل من أفضل البنوك وشركات التمويل بناءً على سجلك الائتماني من خلال موافقة فورية من شركائنا.
+                    </p>
+                    
+                    <div class="hero-cta-group">
+                        <a href="#calculator" class="btn btn-primary btn-lg">قارن العروض <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#how-it-works" class="btn btn-outline btn-lg"><i class="fa-solid fa-play"></i> كيف يعمل؟</a>
+                    </div>
+                    
+                    <div class="hero-trust-metrics mt-4">
+                        <div class="metric">
+                            <strong>+20</strong>
+                            <span>مصرف شريك</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="metric">
+                            <strong>+1 مليار ريال</strong>
+                            <span>تم تمويلها</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="metric">
+                            <strong>+100 ألف</strong>
+                            <span>مستخدم سعيد</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper animate-slide-in-right">
+                    <!-- Glassmorphic Dashboard UI Mockup -->
+                    <div class="glass-dashboard">
+                        <div class="dash-header">
+                            <div class="dash-dots"><span></span><span></span><span></span></div>
+                            <div class="dash-title">مقارنة العروض</div>
+                        </div>
+                        <div class="dash-body">
+                            <!-- Fake Chart/Cards -->
+                            <div class="dash-card primary-offer">
+                                <div class="card-top">
+                                    <div class="bank-logo bank-alrajhi"><i class="fa-solid fa-building-columns"></i> مصرف الراجحي</div>
+                                    <span class="badge-sm badge-success">أفضل سعر</span>
+                                </div>
+                                <div class="card-rates">
+                                    <div><small>المبلغ</small><br><b>500,000 ريال</b></div>
+                                    <div><small>النسبة</small><br><b class="text-primary">2.99%</b></div>
+                                </div>
+                                <div class="card-bottom">
+                                    <span>8,800 ريال / شهر</span>
+                                    <button class="btn btn-primary btn-xs">تقديم</button>
+                                </div>
+                            </div>
+
+                            <div class="dash-card secondary-offer mt-3">
+                                <div class="card-top">
+                                    <div class="bank-logo bank-alinma"><i class="fa-solid fa-landmark"></i> بنك الإنماء</div>
+                                </div>
+                                <div class="card-rates">
+                                    <div><small>المبلغ</small><br><b>500,000 ريال</b></div>
+                                    <div><small>النسبة</small><br><b>3.15%</b></div>
+                                </div>
+                                <div class="card-bottom">
+                                    <span>9,100 ريال / شهر</span>
+                                    <button class="btn btn-outline btn-xs">تقديم</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative Floating Elements -->
+                    <div class="floating-bubble bubble-1"><i class="fa-solid fa-check-circle text-success fs-lg"></i> تمت الموافقة</div>
+                    <div class="floating-bubble bubble-2"><i class="fa-solid fa-percent text-primary fs-lg"></i> نسب منخفضة</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section class="services-grid-section" id="services">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="text-primary fw-bold">خدماتنا</span>
+                    <h2>حلول تمويلية شاملة</h2>
+                    <p class="text-muted">اكتشف مجموعة واسعة من خيارات التمويل المصممة لتلبية جميع احتياجاتك.</p>
+                </div>
+                <div class="services-grid">
+                    <a href="service-personal.html" class="service-card-link">
+                        <div class="service-card-item">
+                            <div class="service-icon icon-personal"><i class="fa-solid fa-user-tie"></i></div>
+                            <h3>تمويل شخصي</h3>
+                            <p>حلول تمويلية مرنة تناسب احتياجاتك الشخصية</p>
+                            <span class="card-arrow">المزيد <i class="fa-solid fa-arrow-left"></i></span>
+                        </div>
+                    </a>
+                    <a href="service-auto.html" class="service-card-link">
+                        <div class="service-card-item">
+                            <div class="service-icon icon-auto"><i class="fa-solid fa-car"></i></div>
+                            <h3>تمويل السيارات</h3>
+                            <p>اختر سيارتك واحصل على أفضل عروض التمويل</p>
+                            <span class="card-arrow">المزيد <i class="fa-solid fa-arrow-left"></i></span>
+                        </div>
+                    </a>
+                    <a href="service-mortgage.html" class="service-card-link">
+                        <div class="service-card-item">
+                            <div class="service-icon icon-mortgage"><i class="fa-solid fa-house"></i></div>
+                            <h3>تمويل الرهن العقاري</h3>
+                            <p>تملّك منزل أحلامك بأفضل الشروط التمويلية</p>
+                            <span class="card-arrow">المزيد <i class="fa-solid fa-arrow-left"></i></span>
+                        </div>
+                    </a>
+                    <a href="service-credit-card.html" class="service-card-link">
+                        <div class="service-card-item">
+                            <div class="service-icon icon-credit"><i class="fa-solid fa-credit-card"></i></div>
+                            <h3>بطاقة الائتمان</h3>
+                            <p>بطاقات ائتمان بمزايا حصرية تناسب أسلوب حياتك</p>
+                            <span class="card-arrow">المزيد <i class="fa-solid fa-arrow-left"></i></span>
+                        </div>
+                    </a>
+                    <a href="service-sme.html" class="service-card-link">
+                        <div class="service-card-item">
+                            <div class="service-icon icon-sme"><i class="fa-solid fa-briefcase"></i></div>
+                            <h3>تمويل الشركات الصغيرة</h3>
+                            <p>نمِّ أعمالك مع حلول تمويلية مصممة للشركات</p>
+                            <span class="card-arrow">المزيد <i class="fa-solid fa-arrow-left"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAMA Section (From arabic_content.md) -->
+        <section class="sama-banner py-4" style="background: var(--primary-light); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <div class="container text-center">
+                <p class="mb-0 fw-medium text-primary">
+                    <i class="fa-solid fa-shield-halved me-2"></i> 
+                    الترخيص الرسمي: شركة هوت سبوت حاصلة على ترخيص من البنك المركزي السعودي للهوت سبوت في قطاع التمويل والأنشطة المساندة.
+                </p>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works bg-white section" id="how-it-works">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="text-primary fw-bold">عملية بسيطة</span>
+                    <h2>كيف يعمل هوت سبوت؟</h2>
+                    <p class="text-muted">احصل على عرض التمويل المخصص لك في ثلاث خطوات بسيطة دون زيارة أي فرع.</p>
+                </div>
+
+                <div class="steps-container">
+                    <!-- Step 1 -->
+                    <div class="step-card animate-fade-in-up" style="animation-delay: 0.1s">
+                        <div class="step-icon"><i class="fa-solid fa-id-card"></i></div>
+                        <h3>1. تحقق من الأهلية</h3>
+                        <p>أدخل بياناتك الأساسية واترك نظامنا يتحقق من ملفك المالي بشكل آمن وفوري.</p>
+                    </div>
+                    
+                    <!-- Arrow -->
+                    <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    
+                    <!-- Step 2 -->
+                    <div class="step-card animate-fade-in-up" style="animation-delay: 0.2s">
+                        <div class="step-icon"><i class="fa-solid fa-list-check"></i></div>
+                        <h3>2. قارن العروض</h3>
+                        <p>شاهد عروض التمويل المعتمدة مسبقاً من عدة بنوك شريكة مرتبة حسب أفضل الأسعار.</p>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                    
+                    <!-- Step 3 -->
+                    <div class="step-card animate-fade-in-up" style="animation-delay: 0.3s">
+                        <div class="step-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <h3>3. احصل على الموافقة</h3>
+                        <p>اختر العرض المفضل لديك، وأكمل الطلب الرقمي، واحصل على التمويل!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section (From arabic_content.md) -->
+        <section class="quote-section section" style="background: var(--text-main); color: white;">
+            <div class="container text-center">
+                <div class="quote-content" style="max-width: 800px; margin: 0 auto;">
+                    <i class="fa-solid fa-quote-right mb-4" style="font-size: 3rem; color: var(--primary-color);"></i>
+                    <h2 class="text-white mb-4" style="font-size: 2.25rem;">"نحن أمة من الحالمين والمبادرين.. أمة تقود العالم في الابتكار والإبداع"</h2>
+                    <p class="fs-lg text-primary fw-bold">— محمد بن سلمان</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Calculator Section -->
+        <section class="calculator-section section" id="calculator">
+            <div class="container">
+                <div class="calculator-wrapper">
+                    <div class="calc-sidebar">
+                        <h2 class="mb-2 text-white">احسب تمويلك</h2>
+                        <p class="text-white opacity-75 mb-4">اضبط أشرطة التمرير لمعرفة ما يمكنك التأهل له اليوم.</p>
+                        
+                        <div class="calc-results-card">
+                            <div class="result-row">
+                                <span>القسط الشهري التقديري</span>
+                                <h3 id="res-monthly">2,450 ريال</h3>
+                            </div>
+                            <hr>
+                            <div class="result-row">
+                                <span>إجمالي مبلغ التمويل</span>
+                                <h4 id="res-total">100,000 ريال</h4>
+                            </div>
+                            <div class="result-row mt-2">
+                                <span>نسبة الربح (السنوية)</span>
+                                <h4 id="res-apr" class="text-primary">2.99%</h4>
+                            </div>
+                            
+                            <button class="btn btn-primary w-100 mt-4">ابحث عن عروض بهذا المبلغ</button>
+                        </div>
+                    </div>
+
+                    <div class="calc-main">
+                        <!-- Type selector -->
+                        <div class="finance-type-tabs">
+                            <button class="tab-btn active" data-type="personal"><i class="fa-solid fa-user"></i> تمويل شخصي</button>
+                            <button class="tab-btn" data-type="auto"><i class="fa-solid fa-car"></i> تمويل سيارات</button>
+                            <button class="tab-btn" data-type="mortgage"><i class="fa-solid fa-house"></i> تمويل عقاري</button>
+                        </div>
+
+                        <div class="calc-form">
+                            <!-- Slider 1 -->
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label>مبلغ التمويل</label>
+                                    <span class="val-display"><span id="val-amount">100,000</span> ريال</span>
+                                </div>
+                                <input type="range" id="slider-amount" min="10000" max="2000000" step="5000" value="100000" class="modern-slider">
+                                <div class="slider-labels">
+                                    <span>10 آلاف</span>
+                                    <span>2 مليون+</span>
+                                </div>
+                            </div>
+
+                            <!-- Slider 2 -->
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label>المدة (بالسنوات)</label>
+                                    <span class="val-display"><span id="val-years">5</span> سنوات</span>
+                                </div>
+                                <input type="range" id="slider-years" min="1" max="25" step="1" value="5" class="modern-slider">
+                                <div class="slider-labels">
+                                    <span>سنة واحدة</span>
+                                    <span>25 سنة</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner Banks / Trust Section -->
+        <section class="partners-section section bg-white" id="partners">
+            <div class="container text-center">
+                <span class="badge badge-success mb-3"><i class="fa-solid fa-shield-halved"></i> مرخص بالكامل من قبل البنك المركزي السعودي (ساما)</span>
+                <h2 class="mb-5">موثوق من قبل البنوك السعودية الرائدة</h2>
+                
+                <div class="swiper clients-swiper">
+                    <div class="swiper-wrapper align-items-center justify-content-center gap-6" style="display:flex; flex-wrap:wrap;">
+                        <div class="partner-logo"><img src="../assets/img/aleajhi.png" alt="Bank" ></div>
+                        <div class="partner-logo"><img src="../assets/img/riyad.png" alt="Bank" ></div>
+                        <div class="partner-logo"><img src="../assets/img/sab.jpg" alt="Bank" ></div>
+                     
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offer Comparison UI -->
+        <section class="comparison-section section" id="compare" style="background-color: var(--bg-main)">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2>عروض التمويل المباشرة</h2>
+                    <p class="text-muted">قارن الأسعار والمدة والأقساط الشهرية فوراً.</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="filters-bar mb-5">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-4">
+                        <div class="filter-tabs d-flex gap-2">
+                            <button class="btn btn-primary btn-sm">جميع القطاعات</button>
+                            <button class="btn btn-outline btn-sm">القطاع الحكومي</button>
+                            <button class="btn btn-outline btn-sm">القطاع الخاص</button>
+                        </div>
+                        <div class="sort-dropdown">
+                            <select class="form-select modern-select">
+                                <option>فرز حسب: أفضل نسبة سنوية (APR)</option>
+                                <option>فرز حسب: أقل قسط شهري</option>
+                                <option>فرز حسب: أعلى مبلغ تمويل</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison Table / Cards List -->
+                <div class="offers-list">
+                    <!-- Offer 1 -->
+                    <div class="offer-card best-offer">
+                        <div class="offer-badge"><i class="fa-solid fa-star"></i> الخيار الأفضل لك</div>
+                        <div class="offer-grid">
+                            <div class="offer-bank">
+                                <img src="../assets/img/aleajhi.png" alt="Bank">
+                                <div>
+                                    <h5>مصرف الراجحي</h5>
+                                    <span class="text-success"><i class="fa-solid fa-bolt"></i> موافقة فورية</span>
+                                </div>
+                            </div>
+                            <div class="offer-detail">
+                                <small>النسبة (تبدأ من)</small>
+                                <h4>2.99%</h4>
+                            </div>
+                            <div class="offer-detail">
+                                <small>أقصى مبلغ</small>
+                                <h4>2,500,000 ريال</h4>
+                            </div>
+                            <div class="offer-detail highlight-detail">
+                                <small>القسط الشهري (على 100ألف)</small>
+                                <h4>1,850 ريال</h4>
+                            </div>
+                            <div class="offer-action">
+                                <a href="apply.html?bank=alrajhi" class="btn btn-primary w-100">قدم الآن</a>
+                                <a href="offer-alrajhi.html" class="btn btn-outline w-100 btn-sm">التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Offer 2 -->
+                    <div class="offer-card mt-4">
+                        <div class="offer-grid">
+                            <div class="offer-bank">
+                                <img src="../assets/img/riyad.png" alt="Bank">
+                                <div>
+                                    <h5>بنك الرياض</h5>
+                                    <span class="text-muted"><i class="fa-solid fa-clock"></i> موافقة خلال 24 ساعة</span>
+                                </div>
+                            </div>
+                            <div class="offer-detail">
+                                <small>النسبة (تبدأ من)</small>
+                                <h4>3.15%</h4>
+                            </div>
+                            <div class="offer-detail">
+                                <small>أقصى مبلغ</small>
+                                <h4>1,500,000 ريال</h4>
+                            </div>
+                            <div class="offer-detail">
+                                <small>القسط الشهري (على 100ألف)</small>
+                                <h4>1,920 ريال</h4>
+                            </div>
+                            <div class="offer-action">
+                                <a href="apply.html?bank=riyad" class="btn btn-primary w-100">قدم الآن</a>
+                                <a href="offer-riyad.html" class="btn btn-outline w-100 btn-sm">التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Offer 3 -->
+                    <div class="offer-card mt-4">
+                        <div class="offer-grid">
+                            <div class="offer-bank">
+                                <img src="../assets/img/sab.jpg" alt="Bank">
+                                <div>
+                                    <h5>بنك ساب</h5>
+                                    <span class="text-muted"><i class="fa-solid fa-clock"></i> موافقة خلال 48 ساعة</span>
+                                </div>
+                            </div>
+                            <div class="offer-detail">
+                                <small>النسبة (تبدأ من)</small>
+                                <h4>3.40%</h4>
+                            </div>
+                            <div class="offer-detail">
+                                <small>أقصى مبلغ</small>
+                                <h4>3,000,000 ريال</h4>
+                            </div>
+                            <div class="offer-detail">
+                                <small>القسط الشهري (على 100ألف)</small>
+                                <h4>2,010 ريال</h4>
+                            </div>
+                            <div class="offer-action">
+                                <a href="apply.html?bank=sab" class="btn btn-primary w-100">قدم الآن</a>
+                                <a href="offer-sab.html" class="btn btn-outline w-100 btn-sm">التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SAMA License & Trust Section -->
+        <section class="sama-license-section bg-white section" id="trust">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-header mb-4">
+                            <span class="text-primary fw-bold">الترخيص الرسمي</span>
+                            <h2>منصة مرخصة وموثوقة</h2>
+                            <p class="text-muted">هوت سبوت مرخصة رسمياً من قبل البنك المركزي السعودي (ساما) لممارسة أنشطة التمويل والخدمات المساندة، مما يضمن أعلى معايير الأمان والشفافية لقراراتك المالية.</p>
+                        </div>
+                        <ul class="trust-checklist mt-4">
+                            <li><i class="fa-solid fa-circle-check text-success"></i> تشفير بنكي لبياناتك الشخصية</li>
+                            <li><i class="fa-solid fa-circle-check text-success"></i> مقارنة شفافة بدون أي رسوم خفية</li>
+                            <li><i class="fa-solid fa-circle-check text-success"></i> تكامل مباشر مع المؤسسات المالية الموثوقة</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary mt-4">تحقق واتصل بنا <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="../assets/img/central-bank.png" alt="ترخيص ساما" class="license-image" style="max-width: 300px; width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Resources -->
+        <section class="education-section section" id="education" style="background-color: var(--bg-main)">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="text-primary fw-bold">أدلة مالية</span>
+                    <h2>اتخذ قرارات مستنيرة</h2>
+                    <p class="text-muted">افهم مصطلحات ومتطلبات التمويل قبل التقديم.</p>
+                </div>
+
+                <div class="article-grid">
+                    <!-- Article 1 -->
+                    <a href="article-apr.html" class="article-card">
+                        <div class="article-img">
+                            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500&q=80" alt="Finance">
+                            <div class="article-category">المصطلحات</div>
+                        </div>
+                        <div class="article-content">
+                            <h3>ما هو معدل الربح السنوي ولماذا يهم؟</h3>
+                            <p>معدل النسبة السنوية هو العامل الأكثر أهمية عند مقارنة التمويل. تعلم كيف يتم حسابه.</p>
+                            <span class="read-more">اقرأ الدليل <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- Article 2 -->
+                    <a href="article-mortgage.html" class="article-card">
+                        <div class="article-img">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&q=80" alt="House">
+                            <div class="article-category">الرهن العقاري</div>
+                        </div>
+                        <div class="article-content">
+                            <h3>متطلبات شراء المنزل لأول مرة في السعودية</h3>
+                            <p>قائمة كاملة بالمستندات ومعايير الأهلية لتأمين الرهن العقاري الأول الخاص بك.</p>
+                            <span class="read-more">اقرأ الدليل <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- Article 3 -->
+                    <a href="article-credit-score.html" class="article-card">
+                        <div class="article-img">
+                            <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=500&q=80" alt="Calculations">
+                            <div class="article-category">استراتيجية</div>
+                        </div>
+                        <div class="article-content">
+                            <h3>كيفية تحسين درجة الائمان الخاصة بك</h3>
+                            <p>خطوات بسيطة لتعزيز ملفك الائتماني والتأهل لأفضل أسعار الفائدة من كبرى البنوك.</p>
+                            <span class="read-more">اقرأ الدليل <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof / Testimonials -->
+        <section class="testimonials-section bg-white section" id="testimonials">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2>يثق بها أكثر من 100 ألف مستخدم في المملكة</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"وفر علي حرفياً أياماً من زيارة فروع البنوك. كانت المقارنة فورية ووجدت سعر تمويل سيارة أقل بـ 1% مما عرضه علي البنك الذي أتعامل معه!"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">A</div>
+                            <div>
+                                <strong>أحمد الغامدي</strong>
+                                <span>الرياض</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"الواجهة نظيفة وسهلة الاستخدام للغاية. أحببت أنها أظهرت بوضوح إجمالي الربح حتى عرفت بالضبط ما كنت أوافق عليه."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">S</div>
+                            <div>
+                                <strong>سارة العتيبي</strong>
+                                <span>جدة</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="review-text">"تطبيق ممتاز! التمكن من رؤية العروض التي أتأهل لها بالفعل بناءً على راتبي منعني من إضاعة الوقت في التقديم للبنوك الخاطئة."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">F</div>
+                            <div>
+                                <strong>فيصل ر.</strong>
+                                <span>الدمام</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Universal Footer -->
+    <footer class="footer section pb-0">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Branding -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo mb-3">
+                        <img src="../assets/img/logo_ar.png" alt="شعار هوت سبوت" class="logo-img">
+                    </a>
+                    <p class="text-muted mt-3">الوجهة الرائدة لمقارنة واختيار وتأمين عروض التمويل المخصصة من أفضل البنوك في المملكة العربية السعودية.</p>
+                    
+                    <div class="footer-app-links mt-4">
+                        <p>حمل التطبيق</p>
+                        <div class="app-btn-container">
+                            <a href="https://play.google.com/store/apps/details?id=com.hotspotfin.client" class="app-store-btn" target="_blank">
+                                <img src="../assets/img/social/android.png" alt="احصل عليه من Google Play">
+                            </a>
+                            <a href="https://apps.apple.com/sa/app/hotspotfin/id6466173356" class="app-store-btn" target="_blank">
+                                <img src="../assets/img/social/ios.png" alt="نزله من App Store">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div class="footer-links">
+                    <h4>التمويل</h4>
+                    <ul>
+                        <li><a href="service-personal.html">تمويل شخصي</a></li>
+                        <li><a href="service-auto.html">تمويل السيارات</a></li>
+                        <li><a href="service-mortgage.html">تمويل الرهن العقاري</a></li>
+                        <li><a href="service-credit-card.html">بطاقات الائتمان</a></li>
+                        <li><a href="service-sme.html">تمويل الشركات الصغيرة</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div class="footer-links">
+                    <h4>الشركة</h4>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-links">
+                    <h4>تواصل معنا</h4>
+                    <ul class="contact-ul">
+                        <li><i class="fa-solid fa-envelope text-primary"></i> <a href="mailto:Customercare@hotspot.sa">Customercare@hotspot.sa</a></li>
+                        <li><i class="fa-solid fa-phone text-primary"></i> <a href="tel:8002450071">800-245-0071</a></li>
+                        <li class="d-flex gap-2">
+                            <i class="fa-solid fa-location-dot text-primary mt-1"></i> 
+                            <span>شركة هوت سبوت لسوق المنتجات الرقمية، 2493 السلي، 7326، الرياض، المملكة العربية السعودية</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="container d-flex justify-content-between align-items-center flex-wrap gap-4">
+                    <p>&copy; 2026 هوت سبوت للتمويل. مرخص من قبل البنك المركزي السعودي (ساما). جميع الحقوق محفوظة.</p>
+                    <div class="footer-regulator">
+                        <span>مرخص من</span>
+                        <img src="../assets/img/central-bank.png" alt="البنك المركزي السعودي ساما" class="sama-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Javascript -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

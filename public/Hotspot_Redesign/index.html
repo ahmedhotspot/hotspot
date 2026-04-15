@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotspot Finance | Compare Financing Offers</title>
+    <meta name="description"
+        content="Compare financing offers from top banks in Saudi Arabia. Find the best rates for personal loans, auto finance, and mortgages with instant approval." />
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo_en.jpg" alt="Hotspot Logo" class="logo-img">
+            </a>
+
+            <div class="nav-links">
+                <a href="services.html" class="nav-link">Financing Types</a>
+                <a href="index.html#calculator" class="nav-link">Calculator</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+                <a href="ar/index.html" class="lang-btn">العربية</a>
+                <div class="dropdown">
+                    <button class="btn btn-primary btn-sm">Register <i
+                            class="fa-solid fa-chevron-down fs-sm"></i></button>
+                    <div class="dropdown-menu">
+                        <a href="register.html" class="dropdown-item">Register</a>
+                        <a href="login.html" class="dropdown-item">Login</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- App Content Wrapper -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <!-- Decorative Elements -->
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+
+            <div class="container hero-container">
+                <div class="hero-content animate-fade-in-up">
+                    <span class="badge badge-primary mb-3"><i class="fa-solid fa-bolt"></i> SAMA Licensed & Instant
+                        Approvals</span>
+
+                    <h1 class="hero-title">
+                        Compare & Find Your <br>
+                        <span class="text-gradient">Best Financing Offers</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Stop bouncing between banks. Get custom, pre-approved offers for personal loans, auto finance,
+                        and mortgages based on your eligibility—all in one place.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#calculator" class="btn btn-primary btn-lg">Compare Offers <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#how-it-works" class="btn btn-outline btn-lg"><i class="fa-solid fa-play"></i> How it
+                            Works</a>
+                    </div>
+
+                    <div class="hero-trust-metrics mt-4">
+                        <div class="metric">
+                            <strong>20+</strong>
+                            <span>Partner Banks</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="metric">
+                            <strong>SAR 1B+</strong>
+                            <span>Financed</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="metric">
+                            <strong>100k+</strong>
+                            <span>Happy Users</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper animate-slide-in-right">
+                    <!-- Glassmorphic Dashboard UI Mockup -->
+                    <div class="glass-dashboard">
+                        <div class="dash-header">
+                            <div class="dash-dots"><span></span><span></span><span></span></div>
+                            <div class="dash-title">Offers Comparison</div>
+                        </div>
+                        <div class="dash-body">
+                            <!-- Fake Chart/Cards -->
+                            <div class="dash-card primary-offer">
+                                <div class="card-top">
+                                    <div class="bank-logo bank-alrajhi"><i class="fa-solid fa-building-columns"></i>
+                                        Bank A</div>
+                                    <span class="badge-sm badge-success">Best Rate</span>
+                                </div>
+                                <div class="card-rates">
+                                    <div><small>Amount</small><br><b>500,000 SAR</b></div>
+                                    <div><small>APR</small><br><b class="text-primary">2.99%</b></div>
+                                </div>
+                                <div class="card-bottom">
+                                    <span>8,800 SAR / Mo</span>
+                                    <button class="btn btn-primary btn-xs">Apply</button>
+                                </div>
+                            </div>
+
+                            <div class="dash-card secondary-offer mt-3">
+                                <div class="card-top">
+                                    <div class="bank-logo bank-alinma"><i class="fa-solid fa-landmark"></i> Bank B</div>
+                                </div>
+                                <div class="card-rates">
+                                    <div><small>Amount</small><br><b>500,000 SAR</b></div>
+                                    <div><small>APR</small><br><b>3.15%</b></div>
+                                </div>
+                                <div class="card-bottom">
+                                    <span>9,100 SAR / Mo</span>
+                                    <button class="btn btn-outline btn-xs">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative Floating Elements -->
+                    <div class="floating-bubble bubble-1"><i class="fa-solid fa-check-circle text-success fs-lg"></i>
+                        Approved</div>
+                    <div class="floating-bubble bubble-2"><i class="fa-solid fa-percent text-primary fs-lg"></i> Low
+                        Rates</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-grid-section" id="services">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="text-primary fw-bold">Our Services</span>
+                    <h2>Comprehensive Financing Solutions</h2>
+                    <p class="text-muted">Discover a wide range of financing options designed to meet all your needs.</p>
+                </div>
+                <div class="services-grid">
+                    <a href="service-personal.html" class="service-card-link">
+                        <div class="service-card-item">
+                            <div class="service-icon icon-personal"><i class="fa-solid fa-user-tie"></i></div>
+                            <h3>Personal Finance</h3>
+                            <p>Flexible financing solutions tailored to your personal needs</p>
+                            <span class="card-arrow">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="service-auto.html" class="service-card-link">
+                        <div class="service-card-item">
+                            <div class="service-icon icon-auto"><i class="fa-solid fa-car"></i></div>
+                            <h3>Auto Finance</h3>
+                            <p>Choose your car and get the best financing offers</p>
+                            <span class="card-arrow">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="service-mortgage.html" class="service-card-link">
+                        <div class="service-card-item">
+                            <div class="service-icon icon-mortgage"><i class="fa-solid fa-house"></i></div>
+                            <h3>Mortgage Finance</h3>
+                            <p>Own your dream home with the best financing terms</p>
+                            <span class="card-arrow">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="service-credit-card.html" class="service-card-link">
+                        <div class="service-card-item">
+                            <div class="service-icon icon-credit"><i class="fa-solid fa-credit-card"></i></div>
+                            <h3>Credit Cards</h3>
+                            <p>Credit cards with exclusive benefits to match your lifestyle</p>
+                            <span class="card-arrow">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="service-sme.html" class="service-card-link">
+                        <div class="service-card-item">
+                            <div class="service-icon icon-sme"><i class="fa-solid fa-briefcase"></i></div>
+                            <h3>SME Finance</h3>
+                            <p>Grow your business with financing solutions built for companies</p>
+                            <span class="card-arrow">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAMA Section -->
+        <section class="sama-banner py-4"
+            style="background: var(--primary-light); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+            <div class="container text-center">
+                <p class="mb-0 fw-medium text-primary">
+                    <i class="fa-solid fa-shield-halved me-2"></i>
+                    Official License: Hotspot is licensed by the Saudi Central Bank (SAMA) for financing and supporting
+                    activities.
+                </p>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works bg-white section" id="how-it-works">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="text-primary fw-bold">Simple Process</span>
+                    <h2>How Hotspot Works</h2>
+                    <p class="text-muted">Get your tailored financing offer in three simple steps without visiting any
+                        branch.</p>
+                </div>
+
+                <div class="steps-container">
+                    <!-- Step 1 -->
+                    <div class="step-card animate-fade-in-up" style="animation-delay: 0.1s">
+                        <div class="step-icon"><i class="fa-solid fa-id-card"></i></div>
+                        <h3>1. Check Eligibility</h3>
+                        <p>Enter your basic details and let our system securely verify your financial profile instantly.
+                        </p>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card animate-fade-in-up" style="animation-delay: 0.2s">
+                        <div class="step-icon"><i class="fa-solid fa-list-check"></i></div>
+                        <h3>2. Compare Offers</h3>
+                        <p>View pre-approved financing offers from multiple partner banks sorted by the best rates.</p>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card animate-fade-in-up" style="animation-delay: 0.3s">
+                        <div class="step-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <h3>3. Get Approved</h3>
+                        <p>Select your preferred offer, complete the digital application, and get funded!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section section" style="background: var(--text-main); color: white;">
+            <div class="container text-center">
+                <div class="quote-content" style="max-width: 800px; margin: 0 auto;">
+                    <i class="fa-solid fa-quote-left mb-4" style="font-size: 3rem; color: var(--primary-color);"></i>
+                    <h2 class="text-white mb-4" style="font-size: 2.25rem;">"We are a nation of dreamers and doers... a
+                        nation that leads the world in innovation and creativity."</h2>
+                    <p class="fs-lg text-primary fw-bold">— Mohammed bin Salman</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Dynamic Calculator Section -->
+        <section class="calculator-section section" id="calculator">
+            <div class="container">
+                <div class="calculator-wrapper">
+                    <div class="calc-sidebar">
+                        <h2 class="mb-2 text-white">Estimate Your Finances</h2>
+                        <p class="text-white opacity-75 mb-4">Adjust the sliders to see what you could qualify for
+                            today.</p>
+
+                        <div class="calc-results-card">
+                            <div class="result-row">
+                                <span>Estimated Monthly Payment</span>
+                                <h3 id="res-monthly">2,450 SAR</h3>
+                            </div>
+                            <hr>
+                            <div class="result-row">
+                                <span>Total Loan Amount</span>
+                                <h4 id="res-total">100,000 SAR</h4>
+                            </div>
+                            <div class="result-row mt-2">
+                                <span>Est. Profit Rate (APR)</span>
+                                <h4 id="res-apr" class="text-primary">2.99%</h4>
+                            </div>
+
+                            <button class="btn btn-primary w-100 mt-4">Find Offers With This Amount</button>
+                        </div>
+                    </div>
+
+                    <div class="calc-main">
+                        <!-- Type selector -->
+                        <div class="finance-type-tabs">
+                            <button class="tab-btn active" data-type="personal"><i class="fa-solid fa-user"></i>
+                                Personal</button>
+                            <button class="tab-btn" data-type="auto"><i class="fa-solid fa-car"></i> Auto</button>
+                            <button class="tab-btn" data-type="mortgage"><i class="fa-solid fa-house"></i>
+                                Mortgage</button>
+                        </div>
+
+                        <div class="calc-form">
+                            <!-- Slider 1 -->
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label>Financing Amount</label>
+                                    <span class="val-display"><span id="val-amount">100,000</span> SAR</span>
+                                </div>
+                                <input type="range" id="slider-amount" min="10000" max="2000000" step="5000"
+                                    value="100000" class="modern-slider">
+                                <div class="slider-labels">
+                                    <span>10k</span>
+                                    <span>2M+</span>
+                                </div>
+                            </div>
+
+                            <!-- Slider 2 -->
+                            <div class="slider-group">
+                                <div class="slider-header">
+                                    <label>Duration (Years)</label>
+                                    <span class="val-display"><span id="val-years">5</span> Years</span>
+                                </div>
+                                <input type="range" id="slider-years" min="1" max="25" step="1" value="5"
+                                    class="modern-slider">
+                                <div class="slider-labels">
+                                    <span>1 Yr</span>
+                                    <span>25 Yrs</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner Banks / Trust Section -->
+        <section class="partners-section section bg-white" id="partners">
+            <div class="container text-center">
+                <span class="badge badge-success mb-3"><i class="fa-solid fa-shield-halved"></i> Fully Regulated by
+                    SAMA</span>
+                <h2 class="mb-5">Trusted by Leading Saudi Banks</h2>
+
+                <!-- Swiper structure (matches old Laravel structure for easy backend porting) -->
+                <div class="swiper clients-swiper">
+                    <div class="swiper-wrapper align-items-center justify-content-center gap-6"
+                        style="display:flex; flex-wrap:wrap;">
+                        <!-- Mock Partner Logos for prototype -->
+                        <div class="partner-logo"><img src="assets/img/aleajhi.png" alt="Bank"></div>
+                        <div class="partner-logo"><img src="assets/img/riyad.png" alt="Bank"></div>
+                        <div class="partner-logo"><img src="assets/img/sab.jpg" alt="Bank"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offer Comparison UI (The core missing feature from the Doc!) -->
+        <section class="comparison-section section" id="compare" style="background-color: var(--bg-main)">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2>Live Financing Offers</h2>
+                    <p class="text-muted">Compare rates, duration, and monthly payments instantly.</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="filters-bar mb-5">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-4">
+                        <div class="filter-tabs d-flex gap-2">
+                            <button class="btn btn-primary btn-sm">All Profiles</button>
+                            <button class="btn btn-outline btn-sm">Gov Sector</button>
+                            <button class="btn btn-outline btn-sm">Private Sector</button>
+                        </div>
+                        <div class="sort-dropdown">
+                            <select class="form-select modern-select">
+                                <option>Sort by: Best Annual Rate (APR)</option>
+                                <option>Sort by: Lowest Monthly Payment</option>
+                                <option>Sort by: Highest Loan Amount</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison Table / Cards List -->
+                <div class="offers-list">
+                    <!-- Offer 1 -->
+                    <div class="offer-card best-offer">
+                        <div class="offer-badge"><i class="fa-solid fa-star"></i> Top Choice for You</div>
+                        <div class="offer-grid">
+                            <div class="offer-bank">
+                                <img src="assets/img/aleajhi.png" alt="Bank">
+                                <div>
+                                    <h5>Al Rajhi Bank</h5>
+                                    <span class="text-success"><i class="fa-solid fa-bolt"></i> Instant Approval</span>
+                                </div>
+                            </div>
+                            <div class="offer-detail">
+                                <small>APR (From)</small>
+                                <h4>2.99%</h4>
+                            </div>
+                            <div class="offer-detail">
+                                <small>Max Amount</small>
+                                <h4>2,500,000 SAR</h4>
+                            </div>
+                            <div class="offer-detail highlight-detail">
+                                <small>Est. Monthly (on 100k)</small>
+                                <h4>1,850 SAR</h4>
+                            </div>
+                            <div class="offer-action">
+                                <a href="apply.html?bank=alrajhi" class="btn btn-primary w-100">Apply Now</a>
+                                <a href="offer-alrajhi.html" class="btn btn-outline w-100 btn-sm">Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Offer 2 -->
+                    <div class="offer-card mt-4" data-aos="fade-up">
+                        <div class="offer-grid">
+                            <div class="offer-bank">
+                                <img src="assets/img/riyad.png" alt="Bank">
+                                <div>
+                                    <h5>Riyad Bank</h5>
+                                    <span class="text-muted"><i class="fa-solid fa-clock"></i> 24h Approval</span>
+                                </div>
+                            </div>
+                            <div class="offer-detail">
+                                <small>APR (From)</small>
+                                <h4>3.15%</h4>
+                            </div>
+                            <div class="offer-detail">
+                                <small>Max Amount</small>
+                                <h4>1,500,000 SAR</h4>
+                            </div>
+                            <div class="offer-detail">
+                                <small>Est. Monthly (on 100k)</small>
+                                <h4>1,920 SAR</h4>
+                            </div>
+                            <div class="offer-action">
+                                <a href="apply.html?bank=riyad" class="btn btn-primary w-100">Apply Now</a>
+                                <a href="offer-riyad.html" class="btn btn-outline w-100 btn-sm">Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Offer 3 -->
+                    <div class="offer-card mt-4" data-aos="fade-up">
+                        <div class="offer-grid">
+                            <div class="offer-bank">
+                                <img src="assets/img/sab.png" alt="Bank">
+                                <div>
+                                    <h5>SAB Bank</h5>
+                                    <span class="text-muted"><i class="fa-solid fa-clock"></i> 48h Approval</span>
+                                </div>
+                            </div>
+                            <div class="offer-detail">
+                                <small>APR (From)</small>
+                                <h4>3.40%</h4>
+                            </div>
+                            <div class="offer-detail">
+                                <small>Max Amount</small>
+                                <h4>3,000,000 SAR</h4>
+                            </div>
+                            <div class="offer-detail">
+                                <small>Est. Monthly (on 100k)</small>
+                                <h4>2,010 SAR</h4>
+                            </div>
+                            <div class="offer-action">
+                                <a href="apply.html?bank=sab" class="btn btn-primary w-100">Apply Now</a>
+                                <a href="offer-sab.html" class="btn btn-outline w-100 btn-sm">Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SAMA License & Trust Section -->
+        <section class="sama-license-section bg-white section" id="trust">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="section-header mb-4">
+                            <span class="text-primary fw-bold">Official License</span>
+                            <h2>Regulated & Trusted</h2>
+                            <p class="text-muted">Hotspot is officially licensed by the Saudi Central Bank (SAMA) to
+                                practice Financing and Support Activities, ensuring the highest standards of security
+                                and transparency for your financial decisions.</p>
+                        </div>
+                        <ul class="trust-checklist mt-4">
+                            <li><i class="fa-solid fa-circle-check text-success"></i> Bank-grade encryption for your
+                                personal data</li>
+                            <li><i class="fa-solid fa-circle-check text-success"></i> Transparent comparison with zero
+                                hidden fees</li>
+                            <li><i class="fa-solid fa-circle-check text-success"></i> Direct integration with trusted
+                                financial institutions</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary mt-4">Verify & Contact <i
+                                class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    <div class="col-lg-6 text-center" data-aos="fade-left">
+                        <img src="assets/img/central-bank.png" alt="SAMA License" class="license-image"
+                            style="max-width: 300px; width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Resources -->
+        <section class="education-section section" id="education" style="background-color: var(--bg-main)">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="text-primary fw-bold">Financial Guides</span>
+                    <h2>Make Informed Decisions</h2>
+                    <p class="text-muted">Understand financing terminology and requirements before you apply.</p>
+                </div>
+
+                <div class="article-grid">
+                    <!-- Article 1 -->
+                    <a href="article-apr.html" class="article-card">
+                        <div class="article-img">
+                            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500&q=80"
+                                alt="Finance">
+                            <div class="article-category">Terminology</div>
+                        </div>
+                        <div class="article-content">
+                            <h3>What is APR and Why Does it Matter?</h3>
+                            <p>Annual Percentage Rate is the most important factor when comparing financing. Learn how
+                                it's calculated.</p>
+                            <span class="read-more">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- Article 2 -->
+                    <a href="article-mortgage.html" class="article-card">
+                        <div class="article-img">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&q=80" alt="House">
+                            <div class="article-category">Mortgages</div>
+                        </div>
+                        <div class="article-content">
+                            <h3>First-Time Homebuyer Requirements in KSA</h3>
+                            <p>A complete checklist of documents and eligibility criteria for securing your first
+                                mortgage.</p>
+                            <span class="read-more">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- Article 3 -->
+                    <a href="article-credit-score.html" class="article-card">
+                        <div class="article-img">
+                            <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=500&q=80"
+                                alt="Calculations">
+                            <div class="article-category">Strategy</div>
+                        </div>
+                        <div class="article-content">
+                            <h3>How to Improve Your Credit Score</h3>
+                            <p>Simple steps to boost your credit profile and qualify for the best interest rates from
+                                top banks.</p>
+                            <span class="read-more">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof / Testimonials -->
+        <section class="testimonials-section bg-white section" id="testimonials">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2>Loved by 100,000+ Users in Saudi Arabia</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Saved me literal days of visiting bank branches. The comparison was
+                            instant and I found an auto lease rate 1% lower than my own bank offered me!"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">A</div>
+                            <div>
+                                <strong>Ahmed Al-Ghamdi</strong>
+                                <span>Riyadh</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"The interface is so clean and easy to use. I loved that it clearly
+                            showed the total markup so I knew exactly what I was agreeing to."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">S</div>
+                            <div>
+                                <strong>Sara Al-Otaibi</strong>
+                                <span>Jeddah</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="review-text">"Excellent app! Being able to see only the offers I'm actually eligible
+                            for based on my salary stopped me from wasting time applying to the wrong banks."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">F</div>
+                            <div>
+                                <strong>Faisal R.</strong>
+                                <span>Dammam</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Universal Footer -->
+    <footer class="footer section pb-0">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Branding -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo mb-3">
+                        <img src="assets/img/logo_en.jpg" alt="Hotspot Logo" class="logo-img">
+                    </a>
+                    <p class="text-muted mt-3">The leading destination to compare, choose, and secure custom financing
+                        offers from top banks in Saudi Arabia.</p>
+
+                    <div class="footer-app-links mt-4">
+                        <p>Download the App</p>
+                        <div class="app-btn-container">
+                            <a href="https://play.google.com/store/apps/details?id=com.hotspotfin.client"
+                                class="app-store-btn" target="_blank">
+                                <img src="assets/img/social/android.png" alt="Get it on Google Play">
+                            </a>
+                            <a href="https://apps.apple.com/sa/app/hotspotfin/id6466173356" class="app-store-btn"
+                                target="_blank">
+                                <img src="assets/img/social/ios.png" alt="Download on the App Store">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div class="footer-links">
+                    <h4>Financing</h4>
+                    <ul>
+                        <li><a href="service-personal.html">Personal Finance</a></li>
+                        <li><a href="service-auto.html">Auto Finance</a></li>
+                        <li><a href="service-mortgage.html">Mortgage Finance</a></li>
+                        <li><a href="service-credit-card.html">Credit Cards</a></li>
+                        <li><a href="service-sme.html">SME Finance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Hotspot</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-links">
+                    <h4>Get in Touch</h4>
+                    <ul class="contact-ul">
+                        <li><i class="fa-solid fa-envelope text-primary"></i> <a
+                                href="mailto:Customercare@hotspot.sa">Customercare@hotspot.sa</a></li>
+                        <li><i class="fa-solid fa-phone text-primary"></i> <a href="tel:8002450071">800-245-0071</a>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                            <span>Hotspot Digital Marketplace LLC, 2493 Al Salhi Dist. 7326, Riyadh, Saudi Arabia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container d-flex justify-content-between align-items-center flex-wrap gap-4">
+                    <p>&copy; 2026 Hotspot Finance. Licensed by the Saudi Central Bank (SAMA). All Rights Reserved.</p>
+                    <div class="footer-regulator">
+                        <span>Regulated by</span>
+                        <img src="assets/img/central-bank.png" alt="SAMA Regulator" class="sama-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Javascript -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
